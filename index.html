@@ -1,79 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors & their types</title>
+    <title>Fonts,Text & Color Properties</title>
     <style>
-        /* universal selectors */
-        *{
-            padding: 0;
-            margin: 0;
+        /* fonts properties */
+        .div1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: bold italic;
+            font-weight: bolder;
+            font-size: 18;
+            line-height: 0.5;
+            
         }
-        /* elements selectors */
-        p{
-            color: pink;
-            background-color: #389306;
+        /* text properties */
+        .div2{
+            letter-spacing: 2px;
+            text-indent: 10px;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-decoration-color: blue;
+            text-decoration-style: wavy;
         }
-        /* class selectors */
-        .box1{
-            background-color: red;
-            width: 100px;
-            height: 100px;
+        /* color properties */
+        .div3{
+            color: red;
+            background-color: yellowgreen;
+            border-color: rgb(0, 0, 0);
         }
-
-        /* id selectors */
-        #boxno-2{
-            background-color: rgb(38, 0, 255);
-            width: 100px;
-            height: 100px;
-        }
-        /* pseudo selector */
-        a:visited{
-            color: green;
-            background-color: blue;
-        }
-
-        a:active{
-            background-color: rgb(255, 0, 187);
+        .div4{
+            color:rgba(90, 0, 0,0.5);
         }
 
-        a:link{
-            background-color: orangered;
-        }
-        a:hover{
-            color: black;
-            background-color: green;
-        }
-
-        p:first-child{
-            background-color: rgb(39, 39, 33);
-        }
-        p:nth-child(2){
-            background-color: rgb(255, 102, 0);
-        }
-        p:nth-child(3){
-            background-color: rgb(255, 255, 255);
-        }
-        p:nth-child(2){
-            background-color: rgb(255, 102, 0);
-        }
     </style>
 </head>
 <body>
-    <div class="box1">i am a box1</div>
-    <div class="box2" id="boxno-2">i am a box2</div>
-    
-    <p>hii black devil</p>
-
-    <a id="link" href="\Index\main.html">main</a>
-    <div class="main">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat provident voluptate officiis iure deserunt placeat assumenda dignissimos ipsam quasi atque?
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-            <p>Lorem, ipsum.</p>
-        </p>
+    <div class="div1">
+        fonts
     </div>
-
+    <p class="div1 div2">Lorem, ipsum dolor sit  adipisicing elit. Accusamus, nihil.</p>
+    <p class="div3">Lorem ipsum dolor sit amet.</p>
+    <p class="div4">Lorem ipsum dolor sit amet.</p>
 </body>
-</html> 
+</html>
