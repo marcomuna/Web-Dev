@@ -3,33 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sizing Units & properties</title>
+    <title>Shadow & Outline property</title>
     <style>
-        /* px - is a universal unit which never change 
-           rem - it take the size of root elementa mainly it takes the size of the body
-           em - it takes the size of parent unit 
-           vh - vh takes the full screen height of the current screen
-           vw - vw takes the full screen width of the current screen
-           vmin - it takes the minimum size of the current screen may be that height or width (in phone vmin mean - width & in pc vmin mean - height)
-           vmax - it takes the minimum size of the current screen may be that height or width(in phone vmax mean - height & in pc vmax mean - width)
-           % - it takes the parent size
-           */
-
         .box{
-            color: red;
-            background-color: blue;
-            width: 100vw;
-            
-            margin: 0;
-            padding: 0;
+            border: 2px solid black;
+            box-shadow:1px 5px 20px 0px green;
+            text-shadow: 5px 5px 1px red;
+            outline: 2px solid red;
+            outline-offset: 2px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-   <div class="box">
-    <p>
-        Lorem, ipsum dolor.
-    </p>
-   </div>
+    <div class="box">box</div>
 </body>
 </html>
