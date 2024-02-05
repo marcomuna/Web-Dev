@@ -3,37 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists & Property</title>
+    <title>CSS Overflow roperty</title>
     <style>
-        ul{
-            display: flex;
-        }
-        ul li{
-            padding: 10;
-            margin: 10px;
-            list-style: devanagari;
-            background-color: yellow;
+        .box{
+            width: 40vw;
+            height: 40vw;
+            background-color: blue;
             border: 2px solid black;
-            list-style-position: inside;
+            text-overflow: clip;
+            overflow: auto scroll;
         }
     </style>
 </head>
 <body>
-   <div class="nav">
-    <ul>
-        <li>home</li>
-        <li>menu</li>
-        <li>about</li>
-        <li>service</li>
-    </ul>
-   </div>
-   <div class="nav">
-    <ul>
-        <li>home</li>
-        <li>menu</li>
-        <li>about</li>
-        <li>service</li>
-    </ul>
-   </div>
+    <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, veritatis quo cupiditate voluptates, id voluptate sed consectetur repudiandae nisi molestiae eveniet soluta? Magni accusantium at minus deserunt labore praesentium eligendi? lorem 30
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem magni iste esse ea excepturi illum veritatis voluptas voluptates incidunt perspiciatis veniam reiciendis explicabo, placeat fugiat doloremque provident deleniti fugit velit?i am box</div>
 </body>
 </html>
