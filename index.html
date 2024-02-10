@@ -3,49 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>CSS Grid</title>
     <style>
         .container{
             border: 2px solid black;
             height: 80vh;
             display: flex;
-            justify-content: center; 
-            align-items: center;
-            flex-wrap: wrap;
-            /* align-content: center; */
+            display: grid;
+            grid-template-columns: 120px 100px;
+            grid-template-rows: 100px 150px 120px;
         }
         .item{
-            flex-grow: 1;
             font-size: 30px;
             border: 2px solid rgb(255, 0, 0);
             height: 50px;
-            width: 10px;
-            margin: 10px;
+            width: 50px;
             background-color: yellowgreen;
-            display: flex;
-            align-items: center;
-            order: 1;
-            justify-content: center;
         }
-        .item3 {
-            /* flex-grow: 2; */
+        .item4{
+            grid-row: 1/2;
+            grid-column: 1/2;
         }
-        .item4 {
-            flex-shrink: 2;
-            align-self: flex-end;
+        .item1{
+            grid-row: 1/2;
+            grid-column: 1/2;
         }
     </style>
 </head>
 <body>
     <main>
         <div class="container">
-            <div class=" item item1 order-3">1start</div>
+            <div class=" item item1 order-3">1s</div>
             <div class=" item item2">2</div>
             <div class=" item item3">3</div>
             <div class=" item item4">4</div>
             <div class=" item item5">5</div>
             <div class=" item item6">6</div>
-            <div class=" item item7 order-1 ">end</div>
+            <div class=" item item7 order-1 ">e</div>
         </div>
     </main>
 </body>
