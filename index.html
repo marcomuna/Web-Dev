@@ -3,39 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>more on CSS selectors</title>
+    <title>Flexbox</title>
     <style>
-        .boxs:first-child{
-            background-color: blue;
+        .container{
+            border: 2px solid black;
+            height: 80vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            flex-wrap: wrap;
+            /* align-content: center; */
         }
-        .boxs::first-line{
-            color: yellowgreen;
-        }
-        .boxs::first-letter{
-            color: red;
-        }
-        .box::selection{
-            background-color: rgb(0, 0, 0);
-            color: red;
-        }
-        .b1::before{
-            content:"muna is good";
-        }
-        .b4::before{
-            content:"muna is good ";
-        }
-        .box::first-letter{
+        .item{
+            flex-grow: 1;
             font-size: 30px;
-            color: purple;
+            border: 2px solid rgb(255, 0, 0);
+            height: 50px;
+            width: 10px;
+            margin: 10px;
+            background-color: yellowgreen;
+            display: flex;
+            align-items: center;
+            order: 1;
+            justify-content: center;
+        }
+        .item3 {
+            /* flex-grow: 2; */
+        }
+        .item4 {
+            flex-shrink: 2;
+            align-self: flex-end;
         }
     </style>
 </head>
 <body>
-    <div class="boxs">
-        <div class="box b1">muna</div>
-        <div class="box b2">muna</div>
-        <div class="box b3">muna</div>
-        <div class="box b4">muna</div>
-    </div>
+    <main>
+        <div class="container">
+            <div class=" item item1 order-3">1start</div>
+            <div class=" item item2">2</div>
+            <div class=" item item3">3</div>
+            <div class=" item item4">4</div>
+            <div class=" item item5">5</div>
+            <div class=" item item6">6</div>
+            <div class=" item item7 order-1 ">end</div>
+        </div>
+    </main>
 </body>
 </html>
