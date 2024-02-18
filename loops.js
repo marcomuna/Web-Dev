@@ -9,23 +9,23 @@
 
 // for in loop .........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-let object = {
-    name:"muna",
-    occupation:"graduate",
-    hobby:"computer study"
+// let object = {
+//     name:"muna",
+//     occupation:"graduate",
+//     hobby:"computer study"
 
-}
-for (const key in object) {
-    const element = object[key];
-    console.log(key,":",element)
-}
+// }
+// for (const key in object) {
+//     const element = object[key];
+//     console.log(key,":",element)
+// }
 
 // for of loop,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-// for (const c of "muna") {
-//     console.log(c)
+for (const c of "muna") {
+    console.log(c)
     
-// }
+}
 
 // while loop ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 // let i = 0
