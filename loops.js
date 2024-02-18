@@ -22,18 +22,18 @@
 
 // for of loop,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-for (const c of "muna") {
-    console.log(c)
+// for (const c of "muna") {
+//     console.log(c)
     
-}
+// }
 
 // while loop ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-// let i = 0
+let i = 0
 
-// while (i<10) {
-//     console.log(i);
-//     i++
-// }
+while (i<10) {
+    console.log(i);
+    i++
+}
 
 // do while loop,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 // let i = 10
