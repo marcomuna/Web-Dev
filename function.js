@@ -24,11 +24,3 @@ console.log("now second programme")
 sum(2,6)
 console.log("now third programme")
 sum(5)
-
-// arrow function,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-
-// let add = (m)=>{
-//     console.log(5+6-m)
-//     console.log(5+m*4)
-// }
-// add(2)
