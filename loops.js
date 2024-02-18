@@ -1,24 +1,24 @@
 
 // for loop ...............i......
-let i = 0
+// let i = 0
 
-for (let i = 0; i < 10 ; i++) {
-    console.log(i)
+// for (let i = 0; i < 10 ; i++) {
+//     console.log(i)
     
-}
+// }
 
 // for in loop .........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
-// let object = {
-//     name:"muna",
-//     occupation:"graduate",
-//     hobby:"computer study"
+let object = {
+    name:"muna",
+    occupation:"graduate",
+    hobby:"computer study"
 
-// }
-// for (const key in object) {
-//     const element = object[key];
-//     console.log(key,":",element)
-// }
+}
+for (const key in object) {
+    const element = object[key];
+    console.log(key,":",element)
+}
 
 // for of loop,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
