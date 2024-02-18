@@ -1,29 +1,29 @@
 // function in JSON={,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,}
 
-function name (num) {
-    console.log(`my name is ${num}`)
-    console.log(`what is your hubby ${num}`)
-    console.log(`are you doing some task  ${num}`)
+// function name (num) {
+//     console.log(`my name is ${num}`)
+//     console.log(`what is your hubby ${num}`)
+//     console.log(`are you doing some task  ${num}`)
     
-}
-name("monu")
-name("muni")
+// }
+// name("monu")
+// name("muni")
 
 
 
 
 
-function sum(a,b,c=8) {
-    console.log(a+b+c)
-    console.log(a+b-c)
-    console.log(a*b+c)
+// function sum(a,b,c=8) {
+//     console.log(a+b+c)
+//     console.log(a+b-c)
+//     console.log(a*b+c)
     
-}
-sum(8,6,5)
-console.log("now second programme")
-sum(2,6)
-console.log("now third programme")
-sum(5)
+// }
+// sum(8,6,5)
+// console.log("now second programme")
+// sum(2,6)
+// console.log("now third programme")
+// sum(5)
 
 // arrow function,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
