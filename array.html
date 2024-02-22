@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in js</title>
+</head>
+
+<body>
+
+    <script>
+        // let a = [1,2,3,4,5,6,7,8,9]
+        // console.log(a)
+        // console.log(a.length)
+        // console.log(a[5])
+        // a[5] = 544;
+        // console.log(a[5])
+
+        // console.log(a.toString())
+
+        // a.push(10)
+        // console.log(a)
+        // a.pop()
+        // console.log(a)
+
+        // console.log("variable b")
+
+        // let b = [10,11,12,13,14,15,16,17,18,19]
+        // b.slice(10,3)
+        // console.log(b)
+
+        // b.splice(1,5)
+        // console.log(b)
+
+        // console.log("loops in array")
+        // let num = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+
+        // for (let index = 0; index <= num.length; index++) {
+        //     // const element = num[index];
+
+        //     console.log(index)
+
+        // }
+        // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,for in loop ,,,,,,,,,,,,,,,,
+        // let obj = {
+        //     a:1,
+        //     b:2,
+        //     c:3,
+        //     d:4
+        // }
+
+        // for (const key in obj) {
+        //     if (Object.hasOwnProperty.call(obj, key)) {
+        //         const element = obj[key];
+        //         console.log(key,element)
+
+        //     }
+        // }
+
+        // ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,for of loop ,,,,,,,,,,,
+        // let num = [1, 2, 3, 4, 5, 6, 7]
+        // for (const i of num) {
+        //     console.log(i)
+        // }
+
+
+        // ,,,,,,,,,,,,,,,,,,, map filter reduce ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+        let arr = [1,2,3,4,5,6,1.5,5.5]
+        // let newarr = []
+
+        // for (let index = 0; index < arr.length; index++) {
+        //     const element = arr[index];
+        //     newarr.push(element**2)
+            
+            let newarr = arr.map((e,index,arr)=>{
+                return e**2
+            })
+        // }
+        console.log(newarr)
+            const gre = (e)=>{
+                    if(e>3){
+                        return true
+                    }
+            }
+            console.log(arr.filter(gre))
+
+            // reduce,,,,,,,,,,,,,,
+            let arr2 = [1,2,3,4,5,6,7,8,9]
+
+            const redu = (a,b)=>{
+                return a*b
+            }
+            console.log(arr2.reduce(redu))
+    </script>
+</body>
+
+</html>
