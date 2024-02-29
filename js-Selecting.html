@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Selecting</title>
+    <style>
+        .container {
+            border: 2px solid black;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 10px;
+            /* background-color: green; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" box box1">1-Muna</div>
+        <div class=" box box2">2-Muna</div>
+        <div class=" box box3">3-Muna</div>
+        <div class=" box box4">4-Muna</div>
+        <div class=" box box5" id="red5">5-Muna</div>
+        <div class=" box box6">6-Muna</div>
+    </div>
+    <script>
+        console.log("hello")
+        // Class selector...........................................................
+        let boxes = document.getElementsByClassName("box")
+        console.log(boxes)
+        
+        boxes[2].style.backgroundColor = "red"
+        
+        // ID selector..............................................................
+        document.getElementById("red5").style.backgroundColor = "yellow"
+        
+        // Query selector...........................................................
+        document.querySelectorAll(".box").forEach(e => {
+            e.style.backgroundColor = "pink"
+        });
+    </script>
+</body> 
+</html>
