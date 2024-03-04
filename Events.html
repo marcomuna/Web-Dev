@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js</title>
+    <style>
+        #grandparent {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #parent {
+            background-color: rgb(26, 255, 0);
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #child {
+            background-color: rgb(0, 34, 255);
+            height: 100px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">click me to change your content</div>
+        <button id="btn">click</button>
+    </div>
+    <div id="grandparent">grandparent
+        <div id="parent">parent
+            <div id="child">
+                child
+            </div>
+        </div>
+    </div>
+    <script>
+        // clicked events...................................
+        document.getElementById("btn").addEventListener("click", () => {
+            document.querySelector(".box").innerHTML = "yes i am clicked"
+        })
+
+        // double clicked events...................................
+        document.getElementById("btn").addEventListener("dblclick", () => {
+            document.querySelector(".box").innerHTML = "<div>yes i am double clicked</div>"
+        })
+
+        // right clicked events...................................
+        document.getElementById("btn").addEventListener("contextmenu", () => {
+            document.querySelector(".box").innerHTML = "yes i am now right clicked"
+        })
+
+        // keyboard key clicked events...................................
+        document.getElementById("btn").addEventListener("keydown", (e) => {
+            // document.querySelector(".box").innerHTML = "you pressed key"
+            console.log(e.key, e.keyCode)
+        })
+
+        // events bubbling examples....../////////////////////////////////////...........................
+        document.getElementById("grandparent").addEventListener("click", (e) => {
+            alert("clicked in grandparents")
+        })
+        document.getElementById("parent").addEventListener("click", (e) => {
+            alert("clicked in parents")
+            // e.stopPropagation()
+        })
+        document.getElementById("child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("clicked in child")
+        })
+        // set interval use>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+        function randomcolor() {
+            let val1 = Math.floor(0 + Math.random() * 255);
+            let val2 = Math.floor(0 + Math.random() * 255);
+            let val3 = Math.floor(0 + Math.random() * 255);
+            return `rgba(${val1}, ${val2}, ${val3})`
+        }
+        setInterval(() => {
+            document.getElementById("child").style.background = randomcolor()
+        }, 1000);
+        setInterval(() => {
+            document.getElementById("parent").style.background = randomcolor()
+        }, 1000);
+        setInterval(() => {
+            document.getElementById("grandparent").style.background = randomcolor()
+        }, 1000);
+
+        // set-setTimeout>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+        setTimeout(() => {
+            document.getElementById("btn").style.background = randomcolor()
+        }, 3000);
+
+    </script>
+</body>
+
+</html>
