@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback-promises</title>
+</head>
+
+<body>
+    <script>
+        // callback///////////////////////////////////////////////
+        // console.log('muna is a hacker');
+        // console.log('muna is a banker');
+
+        // setTimeout(() => {
+        //     console.log('i am in settimeout');
+
+        // }, 0);
+        // console.log('muna is in end');
+
+        // const callback = (arg) => {
+        //     console.log('arg');
+
+        // }
+        // const loadScript = (src, callback) => {
+        //     let sc = document.createElement('script')
+        //     sc.src = src;
+        //     sc.onload = callback("muna");
+        //     document.head.append(sc)
+        // }
+        // loadScript('http://127.0.0.1:5500/Web-Dev/callback-promises.html', callback)
+
+        // Promise////////////////////////////////////////////////
+        // console.log('this is about promises');
+        // let prom = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         console.log('yes i am done');
+        //         resolve('successful')
+
+        //     }, 3000)
+
+        // })
+        // prom.then((a) => {
+        //     console.log(a);
+
+        // })
+
+        // Promise in error //////////////////////////////////////////
+
+        // console.log('this is about promises');
+        // let prom1 = new Promise((resolve, reject) => {
+        //     let a = Math.random();
+        //     if (a < 0.5) {
+        //         reject("random number not support to you")
+        //         console.log('refresh again');
+
+        //     } else {
+
+        //         setTimeout(() => {
+        //             console.log('yes i am done');
+        //             resolve('successful')
+
+        //         }, 2000)
+        //     }
+
+        // })
+        // prom1.then((a) => {
+        //     console.log(a);
+        // }).catch((err) => {
+        //     console.log(err);
+        // })
+        // multiple Promise///////////////////////////////////////////////////////////
+
+        console.log('this is about promises');
+        let prom1 = new Promise((resolve, reject) => {
+            let a = Math.random();
+            if (a < 0.5) {
+                reject("random number not support to you")
+                console.log('refresh again');
+
+            } else {
+
+                setTimeout(() => {
+                    console.log('yes i am done');
+                    resolve('successful')
+
+                }, 2000)
+            }
+
+        })
+        let prom2 = new Promise((resolve, reject) => {
+            let a = Math.random();
+            if (a < 0.5) {
+                reject("random number not support to you 2")
+                console.log('refresh again 2');
+
+            } else {
+
+                setTimeout(() => {
+                    console.log('yes i am done 2');
+                    resolve('successful 2')
+
+                }, 1000)
+            }
+
+        })
+        let pro = Promise.all([prom1,prom2])
+        pro.then((a) => {
+            console.log(a);
+        }).catch((err) => {
+            console.log(err);
+        })
+
+    </script>
+</body>
+
+</html>
