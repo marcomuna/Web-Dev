@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try catch and error</title>
+</head>
+
+<body>
+    <script>
+        let a = prompt("enter first number")
+        let b = prompt("enter second number")
+        if (isNaN(a) || isNaN(b)) {
+            throw SyntaxError("sorry this is not allowed")
+        }
+        let c = parseInt(a) + parseInt(b)
+        try {
+            console.log('the sum is', c * x);
+
+        } catch (error) {
+            console.log('error is caught');
+        }
+        finally {
+            console.log('finally happen');
+
+        }
+
+    </script>
+</body>
+
+</html>
